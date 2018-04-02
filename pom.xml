@@ -75,8 +75,8 @@
                 <version>${starter.swagger.version}</version>
             </dependency>
             <dependency>
-                <artifactId>xss.defender</artifactId>
                 <groupId>cn.devcenter.framework</groupId>
+                <artifactId>xss-defender</artifactId>
                 <version>${starter.xss.defender.version}</version>
             </dependency>
             <dependency>
