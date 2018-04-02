@@ -21,6 +21,13 @@
         <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
         <spring.cloud.version>Edgware.RELEASE</spring.cloud.version>
         <apache.common.version>3.3.2</apache.common.version>
+        <!-- framework components version-->
+        <starter.web.version>1.0.0</starter.web.version>
+        <starter.swagger.version>1.0.0</starter.swagger.version>
+        <starter.xss.defender.version>1.0.0</starter.xss.defender.version>
+        <starter.cors.version>1.0.0</starter.cors.version>
+        <starter.activiti.version>1.0.0</starter.activiti.version>
+        <starter.errorloader.version>1.0.0</starter.errorloader.version>
     </properties>
 
     <dependencyManagement>
@@ -46,6 +53,46 @@
                 <version>${spring.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <artifactId>web</artifactId>
+                <groupId>cn.devcenter.framework</groupId>
+                <version>${starter.web.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>web-tomcat</artifactId>
+                <groupId>cn.devcenter.framework</groupId>
+                <version>${starter.web.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>web-jetty</artifactId>
+                <groupId>cn.devcenter.framework</groupId>
+                <version>${starter.web.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>swagger</artifactId>
+                <groupId>cn.devcenter.framework</groupId>
+                <version>${starter.swagger.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>xss.defender</artifactId>
+                <groupId>cn.devcenter.framework</groupId>
+                <version>${starter.xss.defender.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>cors</artifactId>
+                <groupId>cn.devcenter.framework</groupId>
+                <version>${starter.cors.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.devcenter.framework</groupId>
+                <artifactId>starter-activiti</artifactId>
+                <version>${starter.activiti.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.devcenter.framework</groupId>
+                <artifactId>error-loader</artifactId>
+                <version>${starter.errorloader.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
