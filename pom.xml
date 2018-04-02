@@ -6,24 +6,22 @@
 
     <groupId>cn.devcenter.framework</groupId>
     <artifactId>dependencies</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
 
     <properties>
-        <devcenter-model.version>1.0.0</devcenter-model.version>
         <jdk.version>1.8</jdk.version>
-
-        <spring.boot.version>2.0.0.RELEASE</spring.boot.version>
+        <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
         <spring.cloud.version>Edgware.RELEASE</spring.cloud.version>
+        <apache.common.version>3.3.2</apache.common.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>cn.devcenter.model</groupId>
-                <artifactId>devcenter-model</artifactId>
-                <version>${devcenter-model.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache.common.version}</version>
             </dependency>
             <!-- Spring boot -->
             <dependency>
