@@ -28,6 +28,8 @@
         <starter.cors.version>1.0.0</starter.cors.version>
         <starter.activiti.version>1.0.0</starter.activiti.version>
         <starter.errorloader.version>1.0.0</starter.errorloader.version>
+        <component-sdk-base.version>1.0.0</component-sdk-base.version>
+
     </properties>
 
     <dependencyManagement>
@@ -93,6 +95,11 @@
                 <groupId>cn.devcenter.framework</groupId>
                 <artifactId>error-loader</artifactId>
                 <version>${starter.errorloader.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.devcenter.framework</groupId>
+                <artifactId>component-sdk-base</artifactId>
+                <version>${component-sdk-base.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
